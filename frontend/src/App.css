@@ -1,0 +1,66 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui;
+  background: #f5f7fb;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+.article-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 1rem 0;
+  cursor: grab;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.article-card:active {
+  cursor: grabbing;
+}
+
+/* Swipe animations */
+.article-card.swipe-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.article-card.swipe-right {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+h1 {
+  color: #2d3748;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.article-title {
+  color: #1a365d;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.article-summary {
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.loading {
+  text-align: center;
+  color: #718096;
+}
+
+.progress {
+  text-align: center;
+  color: #718096;
+  margin-top: 1rem;
+}
